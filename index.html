@@ -32,9 +32,9 @@ height: -webkit-fill-available;
 main {
 display: flex;
 flex-wrap: nowrap;
-height: 100vh;
+height: 200vh;
 height: -webkit-fill-available;
-max-height: 100vh;
+max-height: 200vh;
 overflow-x: auto;
 overflow-y: hidden;
 }
@@ -105,6 +105,9 @@ font-weight: 600;
 .lh-tight {
 line-height: 1.25;
 }
+
+
+
 
 
 
@@ -264,139 +267,156 @@ line-height: 1.25;
                     </div>
                 </div>
                 <div class="col-8">
-                    <form>
-                        <div class="mb-3">
-                            <label for="ExampleInputName" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="ExampleInputName"
-                                   placeholder="Введите ваше имя">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email адрес</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                   aria-describedby="emailHelp" placeholder="Введите ваш email адрес">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card_header"></h3>
+                            <form>
+                                <div class="mb-2">
+                                    <label for="ExampleInputName" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="ExampleInputName"
+                                           placeholder="Введите ваше имя">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInputEmail1" class="form-label">Email адрес</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="Введите ваш email адрес">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary form-control">Отправить</button>
+                            </form>
 
                         </div>
+                    </div>
 
-                        <div class="mb-3 form-check">
+                </div>
 
 
-                        </div>
-                        <button type="submit" class="btn btn-primary form-control">Отправить</button>
-                    </form>
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <header>
+                            <div class="pricing-header p-3 pb-md-2 mx-auto text-center">
+                                <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
+                            </div>
+                        </header>
+
+                        <p class="d-inline-flex gap-1"></p>
+                            <div class="row">
+                                <div class="col">
+                                <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample1" aria-expanded="false"
+                                        aria-controls="multiCollapseExample1">Где купить?
+                                </button>
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body">
+                                        Положите товар в корзину и нажмите "Оформить заказ"
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="col">
+                                <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                        aria-controls="multiCollapseExample2">Как доставить?
+                                </button>
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body">
+                                        Выберите удобный способ доставки при оформлении заказа
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="col">
+                                <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                    aria-controls="multiCollapseExample3">Какая гарантия?
+                                </button>
+                                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <div class="card card-body">
+                                        Гарантийный срок товара указан в гарантийном талоне и устанавливается
+                                        фирмой-производителем
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+
+                    </div>
                 </div>
             </div>
 
-    </div>
+
+
+                        <header>
+                            <div class="pricing-header p-5 pb-md-2 mx-auto text-center">
+                                <h3 class="display-4 fw-normal text-body-emphasis">Заказы</h3>
+                            </div>
+                        </header>
+
+                        <table class="table-bordered">
+
+                            <thead>
+                            <tr>
+                                <th scope="col">Номер</th>
+                                <th scope="col">Название товара</th>
+                                <th scope="col">Цена за штуку</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Итоговая сумма</th>
+                                <th scope="col">Статус заказа</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Смартфон</td>
+                                <td>50000</td>
+                                <td>1</td>
+                                <td>50000</td>
+                                <td>
+                                    <div class="alert alert-primary" role="alert">новый</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Ноутбук</td>
+                                <td>120000</td>
+                                <td>2</td>
+                                <td>240000</td>
+                                <td>
+                                    <div class="alert alert-warning" role="alert">обработка</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Наушники</td>
+                                <td>10000</td>
+                                <td>4</td>
+                                <td>40000</td>
+                                <td>
+                                    <div class="alert alert-success" role="alert">обработан</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Чехол</td>
+                                <td>1000</td>
+                                <td>15</td>
+                                <td>15000</td>
+                                <td>
+                                    <div class="alert alert-danger" role="alert">отмена</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
         </main>
-</div>
-<div class="container-fluid">
-    <div class="col-12">
-        <header>
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
-            </div>
-        </header>
-        <p class="d-inline-flex gap-2">
-            <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapseExample1" aria-expanded="false"
-                    aria-controls="multiCollapseExample1">Где купить?
-            </button>
-            <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
-                    aria-controls="multiCollapseExample2">Как доставить?
-            </button>
-            <button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
-                    aria-controls="multiCollapseExample3">Какая гарантия?
-            </button>
-        </p>
-        <div class="row">
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="card card-body">
-                        Положите товар в корзину и нажмите "Оформить заказ"
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <div class="card card-body">
-                        Выберите удобный способ доставки при оформлении заказа
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample3">
-                    <div class="card card-body">
-                        Гарантийный срок товара указан в гарантийном талоне и устанавливается фирмой-производителем
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">Номер</th>
-        <th scope="col">Название товара</th>
-        <th scope="col">Цена за штуку</th>
-        <th scope="col">Количество</th>
-        <th scope="col">Итоговая сумма</th>
-        <th scope="col">Статус заказа</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Смартфон</td>
-        <td>50000</td>
-        <td>1</td>
-        <td>50000</td>
-        <td>
-            <div class="alert alert-primary" role="alert">новый</div>
-        </td>
-    </tr>
-
-    <tr>
-        <th scope="row">2</th>
-        <td>Ноутбук</td>
-        <td>120000</td>
-        <td>2</td>
-        <td>240000</td>
-        <td>
-            <div class="alert alert-warning" role="alert">обработка</div>
-        </td>
-    </tr>
-
-    <tr>
-        <th scope="row">3</th>
-        <td>Наушники</td>
-        <td>10000</td>
-        <td>4</td>
-        <td>40000</td>
-        <td>
-            <div class="alert alert-success" role="alert">обработан</div>
-        </td>
-    </tr>
-
-    <tr>
-        <th scope="row">4</th>
-        <td>Чехол</td>
-        <td>1000</td>
-        <td>15</td>
-        <td>15000</td>
-        <td>
-            <div class="alert alert-danger" role="alert">отмена</div>
-        </td>
-    </tr>
-    </tbody>
-</table>
 
 </main>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
@@ -409,9 +429,6 @@ tooltipTriggerList.forEach(function (tooltipTriggerEl) {
 new bootstrap.Tooltip(tooltipTriggerEl)
 })
 })()
-
-
-
 
 </script>
 </body>
